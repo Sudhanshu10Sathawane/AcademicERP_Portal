@@ -1,0 +1,55 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Style for table header */
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row color for better readability */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+tr:hover {
+  background-color: #ddd;
+}
+td.profile-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+td.profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.loading{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Nunito',sans-serif;
+}
+.filter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+
+}
+
+/* Additional styles for label and select if needed */
+label {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+select {
+  font-size: 1.25rem;
+}

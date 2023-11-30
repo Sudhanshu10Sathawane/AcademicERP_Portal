@@ -1,0 +1,28 @@
+.domain-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.domainmodify-container{
+    display: flex;
+    justify-content: center;
+}
+.success-message{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+}

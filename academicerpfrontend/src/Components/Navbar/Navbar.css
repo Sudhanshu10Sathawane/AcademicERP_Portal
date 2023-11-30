@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@400;500;600;700&family=Nunito:ital,wght@0,300;0,400;1,300&display=swap');
+.navbar{
+    background-color: rgb(243, 78, 56);
+    padding: 2rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;    
+}
+.logo{
+    color: aliceblue;
+    font-family: 'Agbalumo',sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.navbar a{
+    text-decoration: none;
+}
