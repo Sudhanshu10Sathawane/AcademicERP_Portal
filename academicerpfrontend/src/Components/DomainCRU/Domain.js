@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import './Domain.css'
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 const Domain = () => {
     const [domains,setDomains]=useState([]);
     const [loading, setLoading] = useState(true);
@@ -12,8 +12,6 @@ const Domain = () => {
         const fetchDomains=async()=>{
             try {
         const response = await fetch('http://localhost:8080/api/all/domain');
-        // const response = await fetch('http://192.168.1.2:8080/api/all/students');
-        // const response2 = await fetch('http://192.168.1.2:8080/api/all/domain');
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
@@ -35,6 +33,9 @@ program
 qualification */
   return (
     <div>
+    <div className='domain-container'>
+    <Link to="/add/domain/"><button className='add-domain'>Add Domain</button></Link>
+    </div>
       <h1>Domain List</h1>
       {loading ? (
         <p className='loading'>Loading...</p>
